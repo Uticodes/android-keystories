@@ -53,6 +53,8 @@
     </style>
 
 
+
+
     <style name="AppTheme.NoActionBar.SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>

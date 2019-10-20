@@ -1870,6 +1870,7 @@ id titleDividerNoCustom
 id title_edt
 id title_template
 id toolbar
+id toolbar_layout
 id top
 id topPanel
 id touch_outside

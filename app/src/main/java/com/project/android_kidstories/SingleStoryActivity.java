@@ -26,18 +26,14 @@ import java.util.Set;
  */
 public class SingleStoryActivity extends AppCompatActivity {
     public static final String STORY_POSITION = "story_position";
-
     public static final String PREFERENCE_NAME = "com.project.android_kidstories";
     public static final String PREFERENCE_KEY_NAME = "favourite";
     Set<String> mFavourite;
-
-    ImageView story_pic;
+    private ImageView story_pic;
     private ImageView favourite;
-     TextView story_author;
-     TextView story_content;
+    private TextView story_author;
+    private TextView story_content;
     int story_id = 2;
-    private Toolbar toolbar;
-    ProgressDialog progressDoalog;
 
 
     @Override
@@ -48,9 +44,6 @@ public class SingleStoryActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//        progressDoalog = new ProgressDialog(SingleStoryActivity.this);
-//        progressDoalog.setMessage("Loading....");
-//        progressDoalog.dismiss();
 
 
         initViews();
@@ -69,16 +62,26 @@ public class SingleStoryActivity extends AppCompatActivity {
         favourite = findViewById(R.id.favourite_btn);
         story_id = getIntent().getIntExtra("story_id", 0);
         Intent intent = getIntent();
+
         mFavourite = getFavourite();
-        if (intent != null) {
+        if (intent !=null){
+
             Story story = getIntent().getParcelableExtra("story");
 
-            Glide.with(this).load(story.getImageUrl()).into(story_pic);
-            //story_pic.s(story.getImageUrl());
-            story_author.setText("By" + story.getAuthor());
-            story_content.setText(story.getBody());
+            if (story != null) {
+                Glide.with(this).load(story.getImageUrl()).into(story_pic);
+            }
+
+            if (story != null) {
+                story_author.setText(story.getAuthor());
+            }
+            if (story != null) {
+                story_content.setText(story.getBody());
+            }
 
         }
+
+        saveFavourite();
     }
 
 
