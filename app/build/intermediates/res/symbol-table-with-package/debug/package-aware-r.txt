@@ -1267,6 +1267,7 @@ drawable ic_android_black_24dp
 drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_black_48dp
 drawable ic_arrow_forward_black
+drawable ic_bookmark_black_24dp
 drawable ic_bookmark_border_black_24dp
 drawable ic_bookmark_click_24dp
 drawable ic_check_circle_black_24dp
@@ -1292,7 +1293,7 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_profile_box_black_24dp
+drawable ic_profile
 drawable ic_rave_logo
 drawable ic_search
 drawable ic_thumb_down_black_24dp
@@ -1302,6 +1303,7 @@ drawable ic_thumb_up_blue_24dp
 drawable icon_facebook
 drawable icon_google
 drawable indicator_selector
+drawable logo
 drawable master_card_logo_svg
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1424,6 +1426,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addStory
 id add_black_button
 id add_story_label
 id adjust_height
@@ -1448,7 +1451,9 @@ id book_title
 id bookmark
 id bookmark_black
 id bookmark_button
+id bookmark_fragment
 id bottom
+id bottom_nav_view
 id box_count
 id browser_actions_header_text
 id browser_actions_menu_item_icon
@@ -1468,6 +1473,7 @@ id cancelDialogBtn
 id cancel_action
 id cancel_button
 id cardView
+id category_bar
 id category_cardview
 id category_image
 id category_recycler
@@ -1561,7 +1567,6 @@ id header
 id home
 id homeAsUp
 id home_frag_appbar
-id home_frag_calculate_fab
 id home_frag_container
 id home_frag_rootView
 id home_frag_tablayout
@@ -1635,7 +1640,7 @@ id nav_log_out
 id navigation_header_container
 id never
 id never_display
-id new_story_frag_fab
+id new_stories_bar
 id night_switch
 id none
 id normal
@@ -1663,6 +1668,7 @@ id parent_matrix
 id paymentInstructionsTv
 id percent
 id pin
+id popular_stories_bar
 id profile
 id profile_edit
 id progress_bar
@@ -1740,6 +1746,7 @@ id reg_password
 id reg_progress_bar
 id reg_txt_view
 id registration_parent_layout
+id relativeLayout2
 id requestPermsBtn
 id right
 id right_icon
@@ -1806,6 +1813,7 @@ id story_item_image
 id story_item_like_count
 id story_item_like_icon
 id story_item_title
+id story_listing_bar
 id story_thumbnail
 id story_title
 id stretch
@@ -2048,6 +2056,7 @@ layout single_story_content
 layout story_item
 layout story_listing_item
 layout support_simple_spinner_dropdown_item
+menu bottom_nav_bar
 menu menu_edit_profile
 menu menu_main
 menu menu_nav_drawer
@@ -2238,11 +2247,13 @@ string google_btn_label
 string grant_permission
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string hnginterns
 string i_have_made_the_transfer
 string image_status
 string invalidCharge
 string invalidChargeCode
 string isInternetBanking
+string kids_stories
 string last_digits
 string library_easypreferences_author
 string library_easypreferences_authorWebsite
@@ -2333,6 +2344,7 @@ string transactionError
 string transfer_received_successfully
 string type_content
 string ugx_validate_instructions
+string unable
 string unknownAuth
 string unknownAuthmsg
 string unknownResCode

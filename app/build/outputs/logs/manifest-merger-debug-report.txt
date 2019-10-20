@@ -154,9 +154,9 @@ MERGED from [com.scottyab:aescrypt:0.0.1] C:\Users\Utibe\.gradle\caches\transfor
 	android:fullBackupContent
 		ADDED from C:\Users\Utibe\Desktop\HNG6\android-keystories\app\src\main\AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from C:\Users\Utibe\Desktop\HNG6\android-keystories\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\Utibe\Desktop\HNG6\android-keystories\app\src\main\AndroidManifest.xml:16:9-43
 	android:icon
-		ADDED from C:\Users\Utibe\Desktop\HNG6\android-keystories\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\Utibe\Desktop\HNG6\android-keystories\app\src\main\AndroidManifest.xml:14:9-38
 	android:allowBackup
 		ADDED from C:\Users\Utibe\Desktop\HNG6\android-keystories\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
