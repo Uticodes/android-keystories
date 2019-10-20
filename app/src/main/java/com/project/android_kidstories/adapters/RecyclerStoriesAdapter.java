@@ -19,8 +19,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.Resource;
 import com.project.android_kidstories.Api.Responses.story.StoryAllResponse;
+import com.project.android_kidstories.Model.Story;
 import com.project.android_kidstories.R;
 import com.project.android_kidstories.SingleStoryActivity;
+
+import java.util.List;
 
 /**
  * @author .: Oluwajuwon Fawole
@@ -30,11 +33,16 @@ public class RecyclerStoriesAdapter extends RecyclerView.Adapter<RecyclerStories
 
 
     private Context context;
-    private StoryAllResponse storiesList;
+    private List<Story> storiesList;
+    StoryOnclickListener mListener;
+
+    public interface  StoryOnclickListener{
+        void onClick(int position);
+    }
 
 
 
-    public RecyclerStoriesAdapter(Context context, StoryAllResponse storiesList) {
+    public RecyclerStoriesAdapter(Context context, List<Story> storiesList) {
         this.context = context;
         this.storiesList = storiesList;
     }
@@ -79,20 +87,20 @@ public class RecyclerStoriesAdapter extends RecyclerView.Adapter<RecyclerStories
 
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
-        Glide.with(context).load(storiesList.getData().get(position).getImageUrl()).into(holder.storyImage);
+        Glide.with(context).load(storiesList.get(position).getImageUrl()).into(holder.storyImage);
 
-        holder.storyTitle.setText(storiesList.getData().get(position).getTitle());
-        holder.authorName.setText(storiesList.getData().get(position).getAuthor());
+        holder.storyTitle.setText(storiesList.get(position).getTitle());
+        holder.authorName.setText(storiesList.get(position).getAuthor());
 
-        holder.ageRange.setText("For kids ages "+storiesList.getData().get(position).getAge());
-        holder.likes.setText(storiesList.getData().get(position).getLikesCount()+"");
-        holder.dislikes.setText(storiesList.getData().get(position).getDislikesCount()+"");
+        holder.ageRange.setText("For kids ages "+storiesList.get(position).getAge());
+        holder.likes.setText(storiesList.get(position).getLikesCount()+"");
+        holder.dislikes.setText(storiesList.get(position).getDislikesCount()+"");
 
 
         holder.list_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int story_id = storiesList.getData().get(position).getId();
+                int story_id = storiesList.get(position).getId();
                 Intent intent = new Intent(context, SingleStoryActivity.class);
                 intent.putExtra("story_id", story_id);
                 context.startActivity(intent);
@@ -178,6 +186,6 @@ public class RecyclerStoriesAdapter extends RecyclerView.Adapter<RecyclerStories
 
     @Override
     public int getItemCount() {
-        return storiesList.getData().size();
+        return storiesList.size();
     }
 }

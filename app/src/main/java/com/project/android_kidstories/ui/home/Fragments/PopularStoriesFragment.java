@@ -59,7 +59,7 @@ public class PopularStoriesFragment extends Fragment {
 
                 recyclerView = v.findViewById(R.id.recyclerView);
                 if (response.isSuccessful()) {
-                    adapter = new RecyclerStoriesAdapter(getContext(), sortList(response.body()));
+                    adapter = new RecyclerStoriesAdapter(getContext(), sortList(response.body()).getData());
                     GridLayoutManager layoutManager = new GridLayoutManager(getContext(), 1);
                     recyclerView.setLayoutManager(layoutManager);
                     recyclerView.setAdapter(adapter);

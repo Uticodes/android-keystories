@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\android-kidstories-test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\Utibe\\Desktop\\HNG6\\android-keystories\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\AndroidStudioProjects\\android-kidstories-test\\app\\src\\main\\res\\values-v23\\strings.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "57,120",
-                        "endColumns": "61,49",
-                        "endOffsets": "114,165"
-                    },
-                    "to": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "102,164",
-                        "endColumns": "61,49",
-                        "endOffsets": "159,209"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\c034f7088c57e18a85dafc68b942945f\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Utibe\\.gradle\\caches\\transforms-2\\files-2.1\\c034f7088c57e18a85dafc68b942945f\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -40,24 +23,43 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\AndroidStudioProjects\\android-kidstories-test\\app\\src\\main\\res\\values-v23\\dimens.xml",
+                    "source": "C:\\Users\\Utibe\\Desktop\\HNG6\\android-keystories\\app\\src\\main\\res\\values-v23\\styles.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "46",
-                        "endOffsets": "99"
+                        "startLines": "1,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,382",
+                        "endLines": "6,12",
+                        "endColumns": "12,12",
+                        "endOffsets": "374,636"
                     },
                     "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
+                        "startLines": "5,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "214,571",
+                        "endLines": "10,15",
+                        "endColumns": "12,12",
+                        "endOffsets": "566,821"
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Utibe\\Desktop\\HNG6\\android-keystories\\app\\src\\main\\res\\values-v23\\strings.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "57,120",
+                        "endColumns": "61,49",
+                        "endOffsets": "114,165"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "102,164",
+                        "endColumns": "61,49",
+                        "endOffsets": "159,209"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Utibe\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -76,22 +78,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\AndroidStudioProjects\\android-kidstories-test\\app\\src\\main\\res\\values-v23\\styles.xml",
+                    "source": "C:\\Users\\Utibe\\Desktop\\HNG6\\android-keystories\\app\\src\\main\\res\\values-v23\\dimens.xml",
                     "from": {
-                        "startLines": "1,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "17,382",
-                        "endLines": "6,12",
-                        "endColumns": "12,12",
-                        "endOffsets": "374,636"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "46",
+                        "endOffsets": "99"
                     },
                     "to": {
-                        "startLines": "5,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "214,571",
-                        "endLines": "10,15",
-                        "endColumns": "12,12",
-                        "endOffsets": "566,821"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
                     }
                 }
             ]

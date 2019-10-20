@@ -32,6 +32,7 @@ import com.pixplicity.easyprefs.library.Prefs;
 import com.project.android_kidstories.Api.HelperClasses.AddStoryHelper;
 import com.project.android_kidstories.DataStore.Repository;
 import com.project.android_kidstories.LoginActivity;
+import com.project.android_kidstories.Model.Story;
 import com.project.android_kidstories.R;
 import com.project.android_kidstories.sharePref.SharePref;
 import com.project.android_kidstories.ui.home.Fragments.CategoriesFragment;
@@ -40,6 +41,8 @@ import com.project.android_kidstories.ui.home.StoryAdapter;
 import com.project.android_kidstories.ui.info.AboutFragment;
 import com.project.android_kidstories.ui.profile.ProfileFragment;
 import com.project.android_kidstories.ui.support.DonateFragment;
+
+import java.util.List;
 
 /**
  * @author .: Ehma Ugbogo
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Toolbar toolbar;
     private Repository repository;
     private StoryAdapter storyAdapter;
+    static List<Story> storiesList;
     private GoogleApiClient mGoogleApiClient;
 
     private SharePref sharePref;
