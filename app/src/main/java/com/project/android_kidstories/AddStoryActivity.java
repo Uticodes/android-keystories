@@ -25,7 +25,7 @@ public class AddStoryActivity extends AppCompatActivity {
     public final int PERMISSION_REQUEST_CODE = 100;
     public final int PICTURE_REQUEST_CODE = 200;
     private TextView imagePathText;
-    private EditText storyTitle;
+    private EditText storyTitle, authorName;
     private Uri imageUri;
     private String imagePath;
     private String stringUri;
@@ -46,6 +46,7 @@ public class AddStoryActivity extends AppCompatActivity {
         });
 
         storyTitle = findViewById(R.id.title_edt);
+        authorName = findViewById(R.id.author_edt);
     }
 
     private void checkPermission() {
@@ -80,11 +81,13 @@ public class AddStoryActivity extends AppCompatActivity {
 
     public void TypeContent(View view) {
 
-        if (TextUtils.isEmpty(storyTitle.getText())) {
+        if (TextUtils.isEmpty(storyTitle.getText()) & TextUtils.isEmpty(authorName.getText())) {
             storyTitle.setError("Title cannot be empty");
+            authorName.setError("Authors name cannot be empty");
         } else {
             Intent i = new Intent(AddStoryActivity.this, AddStoriesContentActivity.class);
             i.putExtra("story_title", storyTitle.getText().toString());
+            i.putExtra("Authors name",authorName.getText().toString());
 
 
             if(imageUri != null)
